@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class TaskTest {
+ class TaskTest {
     @Test
     @DisplayName("Doit créer une tache valide quand les données sont correctes")
     void shouldCreateValidTask(){

@@ -1,4 +1,4 @@
-package com.andrea.todoList.tasks.application.ports;
+package com.andrea.todoList.tasks.application.ports.out;
 
 import com.andrea.todoList.tasks.domaine.model.Tasks;
 
@@ -7,11 +7,11 @@ import java.util.Optional;
 
 
 // Utilisé par la couche infrastructure(comme la bd)
-public interface TaskRepositoryPortOut {
+public interface TaskRepository {
 
     Tasks save (Tasks tasks);
 
-    Optional<Tasks> findByid(Long id);
+    Optional<Tasks> findTasksById(Long id);
 
     List<Tasks> findByUserId(Long idUser);
 
